@@ -1,0 +1,64 @@
+{
+    "title": "get list booking request body",
+    "description": "returns the booking data",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "totalRecord": {
+            "description": "Total record of booking",
+            "type": "integer"
+        },
+        "data": {
+            "description": "List of booking",
+            "type": "object",
+            "properties": {
+                "resource":{
+                    "description": "general information of resource",
+                    "type": "array",
+                    "items": {
+                        "description": "get id and name of resource",
+                        "type":"object",
+                        "required": [
+                            "_id"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "description": "Id of resource"
+                            },
+                            "nickName": {
+                                "type": "string",
+                                "description": "nick name of booking"
+                            }
+                        }
+                    }
+                },
+                "events":{
+                    "description": "booking items",
+                    "type": "array",
+                    "items": {
+                        "description": "item information",
+                        "type":"object",
+                        "required": [
+                            "_id"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "description": "Id of resource"
+                            },
+                            "start": {
+                                "type": "string",
+                                "description": "time start"
+                            },
+                            "end": {
+                                "type": "string",
+                                "description": "time end"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

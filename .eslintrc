@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "indent": ["error", 4],
+    "func-names":0,
+    "no-console": 0,
+    "newline-before-return": "error",
+    "space-before-blocks": "error",
+    "import/prefer-default-export": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "get list projects request query",
+  "description": "returns the list projects data",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "sort": {
+      "description": "The sort order of records e.g. sort=field1,-field2",
+      "type": "string"
+    },
+    "post_per_page": {
+      "description": "Post per page",
+      "type": "string"
+    },
+    "paged": {
+      "description": "Current page",
+      "type": "string"
+    }
+  }
+}

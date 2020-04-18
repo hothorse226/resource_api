@@ -1,0 +1,53 @@
+{
+  "title": "Create Booking response body",
+  "description": "returns the booking data",
+  "type": "object",
+  "additionalProperties": true,
+  "required" : ["resource_id", "time_from","time_end","hours_per_day","client_id", "booker_id"],
+  "properties": {
+    "resource_id": {
+      "type": "string",
+      "description": "Resource id"
+    },
+    "booking_type": {
+      "type": "number",
+      "description": "Booking type"
+    },
+    "time_from": {
+      "type": "string",
+      "description": "Time from"
+    },
+    "time_end": {
+      "type": "string",
+      "description": "Time end"
+    },
+    "hours_per_day": {
+      "type": "number",
+      "description": "Hours per day"
+    },
+    "client_id": {
+      "type": "string",
+      "description": "Client id"
+    },
+    "project_id": {
+      "type": "string",
+      "description": "Project id"
+    },
+    "time_off_reason": {
+      "type": "string",
+      "description": "time off reason"
+    },
+    "billable": {
+      "type": "number",
+      "description": "billable"
+    },
+    "detail": {
+      "type": "string",
+      "description": "detail"
+    },
+    "booker_id": {
+      "type": "string",
+      "description": "booker id"
+    }
+  }
+}

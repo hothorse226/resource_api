@@ -1,0 +1,25 @@
+{
+  "title": "Create client request body",
+  "description": "returns the client data",
+  "type": "object",
+  "additionalProperties": false,
+  "required" : ["name"],
+  "properties": {
+    "name": {
+      "description": "Name of client",
+      "type": "string"
+    },
+    "color": {
+      "description": "Color of client",
+      "type": "string"
+    },
+    "note": {
+      "description": "Note of client",
+      "type": "string"
+    },
+    "is_active":{
+      "description": "status active of client",
+      "type":"boolean"
+    }
+  }
+}

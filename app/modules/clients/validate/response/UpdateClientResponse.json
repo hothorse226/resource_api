@@ -1,0 +1,29 @@
+{
+  "title": "update client request success",
+  "description": "returns the client data",
+  "type": "object",
+  "additionalProperties": true,
+  "required" : ["name","_id"],
+  "properties": {
+    "_id":{
+      "type": "string",
+      "description": "Id of client"
+    },
+    "name": {
+      "description": "Name of client",
+      "type": "string"
+    },
+    "color": {
+      "description": "Color of client",
+      "type": "string"
+    },
+    "note": {
+      "description": "Note of client",
+      "type": "string"
+    },
+    "is_active":{
+      "description": "status active of client",
+      "type":"boolean"
+    }
+  }
+}

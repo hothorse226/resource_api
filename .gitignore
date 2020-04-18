@@ -1,0 +1,5 @@
+node_modules
+.idea
+logs/error.log
+package-lock.json
+public/

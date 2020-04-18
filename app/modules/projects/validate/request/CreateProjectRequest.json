@@ -1,0 +1,37 @@
+{
+  "title": "Create project request body",
+  "description": "returns the project data",
+  "type": "object",
+  "additionalProperties": false,
+  "required" : ["name", "code"],
+  "properties": {
+    "name": {
+      "description": "Name of project",
+      "type": "string"
+    },
+    "code":{
+      "description": "Code of project",
+      "type": "string"
+    },
+    "clientId":{
+      "description": "Client id of project - it reference with clients api",
+      "type": "string"
+    },
+    "color": {
+      "description": "Color of project",
+      "type": "string"
+    },
+    "note": {
+      "description": "Note of project",
+      "type": "string"
+    },
+    "billable": {
+      "description": "status billable or not of project",
+      "type":"boolean"
+    },
+    "is_active":{
+      "description": "status active of project",
+      "type":"boolean"
+    }
+  }
+}

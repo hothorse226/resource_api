@@ -1,0 +1,20 @@
+{
+  "title": "Login resource request body",
+  "description": "returns the resource data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "email",
+    "password"
+  ],
+  "properties": {
+    "email": {
+      "type": "string",
+      "description": "Email of resource"
+    },
+    "password": {
+      "type": "string",
+      "description": "password of resource"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Register resource request body",
+  "description": "returns the resource data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "email",
+    "password",
+    "firstName",
+    "lastName"
+  ],
+  "properties": {
+    "email": {
+      "type": "string",
+      "description": "Email of resource"
+    },
+    "password": {
+      "type": "string",
+      "description": "password of resource"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "firstName of resource"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "lastName of resource"
+    },
+    "timeZone": {
+      "type": "string",
+      "description": "timeZone of resource"
+    },
+    "nickName": {
+      "type": "string",
+      "description": "nickName of resource"
+    },
+    "billable": {
+      "type": "boolean"
+    }
+  }
+}

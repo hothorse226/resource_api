@@ -1,0 +1,159 @@
+{
+  "title": "Update resource request body",
+  "description": "returns the resource data",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "description": "First name of resource"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Last name of resource"
+    },
+    "nickName": {
+      "type": "string",
+      "description": "Nick name of resource"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email of resource"
+    },
+    "password": {
+      "type": "string",
+      "description": "password of resource"
+    },
+    "clientId": {
+      "type": "array",
+      "description": "Client of resource",
+      "items":{
+        "type":"string",
+        "description": "id of client"
+      }
+    },
+    "projectId": {
+      "type": "array",
+      "description": "Project of resource",
+      "items":{
+        "type":"string",
+        "description": "id of project"
+      }
+    },
+    "timeZone": {
+      "type": "string",
+      "description": "Time zone of resource"
+    },
+    "avatar": {
+      "type": "string",
+      "description": "avatar of resource"
+    },
+    "avatarFileName": {
+      "type": "string",
+      "description": "avatar of resource"
+    },
+    "color": {
+      "type": "string",
+      "description": "Color of resource"
+    },
+    "phone": {
+      "type": "string",
+      "description": "phone of resource"
+    },
+    "note": {
+      "type": "string",
+      "description": "note of resource"
+    },
+    "position": {
+      "type": "string",
+      "description": "position of resource"
+    },
+    "timeAllocation": {
+      "type": "string",
+      "description": "Time Allocation of resource"
+    },
+    "availability":{
+      "type": "array",
+      "description": "availability of resource",
+      "items":{
+        "type":"object",
+        "description": "List item availability of resource",
+        "additionalProperties": false,
+        "properties":{
+          "key":{
+            "type": "string",
+            "description": "key item availability"
+          },
+          "_id":{
+            "type": "string",
+            "description": "key item availability"
+          },
+          "value":{
+            "type": "array",
+            "description": "values of item availability",
+            "items":{
+              "type":"object",
+              "description": "values of item availability",
+              "additionalProperties": false,
+              "properties":{
+                "_id":{
+                  "type":"string",
+                  "description": "time from of value item availability"
+                },
+                "from":{
+                  "type":"string",
+                  "description": "time from of value item availability"
+                },
+                "to": {
+                  "type":"string",
+                  "description": "time tp of value item availability"
+                }
+              }
+            }
+          }
+
+        }
+      }
+    },
+    "permission": {
+      "type": "integer",
+      "description": "permission of resource - 1 : Administrator , 2 manager , 3 basic user"
+    },
+    "contractor_employee": {
+      "type": "array",
+      "description": "contractor / employee of resource",
+      "items":{
+        "type":"string",
+        "description": "value of contractor / employee"
+      }
+    },
+    "department": {
+      "type": "array",
+      "description": "department of resource",
+      "items":{
+        "type":"string",
+        "description": "value of department"
+      }
+    },
+    "jobTitle": {
+      "type":"string",
+      "description": "value of jobTitle"
+    },
+    "skills": {
+      "type": "array",
+      "description": "skills of resource",
+      "items":{
+        "type":"string",
+        "description": "value of skills"
+      }
+    },
+    "bookable": {
+      "type": "boolean",
+      "description": "bookable of resource"
+    },
+    "is_active":{
+      "description": "status active of resource",
+      "type":"boolean"
+    }
+  }
+}

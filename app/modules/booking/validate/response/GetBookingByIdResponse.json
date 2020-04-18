@@ -1,0 +1,196 @@
+{
+    "title": "get list booking request body",
+    "description": "returns the booking data",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "totalRecord": {
+            "description": "Total record of booking",
+            "type": "integer"
+        },
+        "data": {
+            "description": "List of booking",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "_id"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string",
+                        "description": "Id of booking"
+                    },
+                    "resource_id": {
+                        "description": "resource id of booking - it reference with resource api",
+                        "type": "object",
+                        "additionalProperties": true,
+                        "required": [
+                            "email",
+                            "_id"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "description": "Id of resource"
+                            },
+                            "firstName": {
+                                "type": "string",
+                                "description": "First name of resource"
+                            },
+                            "lastName": {
+                                "type": "string",
+                                "description": "Last name of resource"
+                            },
+                            "nickName": {
+                                "type": "string",
+                                "description": "Nick name of resource"
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "Email of resource"
+                            },
+                            "is_active": {
+                                "description": "status active of resource",
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "time_from": {
+                        "type": "string",
+                        "description": "time from of booking"
+                    },
+                    "time_end": {
+                        "type": "string",
+                        "description": "time end of booking"
+                    },
+                    "hours_per_day": {
+                        "type": "number",
+                        "description": "hours per day of booking"
+                    },
+                    "client_id": {
+                        "description": "Client id of booking - it reference with clients api",
+                        "type": "object",
+                        "additionalProperties": true,
+                        "required": [
+                            "name",
+                            "_id"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "description": "Id of client"
+                            },
+                            "name": {
+                                "description": "Name of client",
+                                "type": "string"
+                            },
+                            "color": {
+                                "description": "Color of client",
+                                "type": "string"
+                            },
+                            "note": {
+                                "description": "Note of client",
+                                "type": "string"
+                            },
+                            "is_active": {
+                                "description": "status active of client",
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "project_id": {
+                        "description": "Project id of booking - it reference with projects api",
+                        "type": "object",
+                        "additionalProperties": true,
+                        "required": [
+                            "name",
+                            "_id"
+                        ],
+                        "properties": {
+                            "_id":{
+                                "type": "string",
+                                "description": "Id of project"
+                              },
+                              "name": {
+                                "description": "Name of project",
+                                "type": "string"
+                              },
+                              "code":{
+                                "description": "Code of project",
+                                "type": "string"
+                              },
+                              "clientId":{
+                                "description": "Client id of project - it reference with clients api",
+                                "type": "string"
+                              },
+                              "color": {
+                                "description": "Color of project",
+                                "type": "string"
+                              },
+                              "note": {
+                                "description": "Note of project",
+                                "type": "string"
+                              },
+                              "billable": {
+                                "description": "status billable or not of project",
+                                "type":"boolean"
+                              },
+                              "is_active":{
+                                "description": "status active of project",
+                                "type":"boolean"
+                              }
+                        }
+                    },
+                    "time_off_reason": {
+                        "type": "string",
+                        "description": "time off reason of booking"
+                    },
+                    "billable": {
+                        "type": "number",
+                        "description": "billable of booking"
+                    },
+                    "detail": {
+                        "type": "string",
+                        "description": "detail of booking"
+                    },
+                    "booker_id": {
+                        "description": "resource id of booking - it reference with resource api",
+                        "type": "object",
+                        "additionalProperties": true,
+                        "required": [
+                            "email",
+                            "_id"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "description": "Id of resource"
+                            },
+                            "firstName": {
+                                "type": "string",
+                                "description": "First name of resource"
+                            },
+                            "lastName": {
+                                "type": "string",
+                                "description": "Last name of resource"
+                            },
+                            "nickName": {
+                                "type": "string",
+                                "description": "Nick name of resource"
+                            },
+                            "email": {
+                                "type": "string",
+                                "description": "Email of resource"
+                            },
+                            "is_active": {
+                                "description": "status active of resource",
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

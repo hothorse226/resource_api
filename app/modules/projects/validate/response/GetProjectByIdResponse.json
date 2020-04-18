@@ -1,0 +1,65 @@
+{
+  "title": "get project by id request success",
+  "description": "returns the project data",
+  "type": "object",
+  "additionalProperties": true,
+  "required" : ["name","_id","code"],
+  "properties": {
+    "_id":{
+      "type": "string",
+      "description": "Id of project"
+    },
+    "name": {
+      "description": "Name of project",
+      "type": "string"
+    },
+    "code":{
+      "description": "Code of project",
+      "type": "string"
+    },
+    "clientId":{
+      "description": "Client id of project - it reference with clients api",
+      "type": "object",
+      "additionalProperties": true,
+      "required" : ["name","_id"],
+      "properties": {
+        "_id":{
+          "type": "string",
+          "description": "Id of client"
+        },
+        "name": {
+          "description": "Name of client",
+          "type": "string"
+        },
+        "color": {
+          "description": "Color of client",
+          "type": "string"
+        },
+        "note": {
+          "description": "Note of client",
+          "type": "string"
+        },
+        "is_active":{
+          "description": "status active of client",
+          "type":"boolean"
+        }
+      }
+    },
+    "color": {
+      "description": "Color of project",
+      "type": "string"
+    },
+    "note": {
+      "description": "Note of project",
+      "type": "string"
+    },
+    "billable": {
+      "description": "status billable or not of project",
+      "type":"boolean"
+    },
+    "is_active":{
+      "description": "status active of project",
+      "type":"boolean"
+    }
+  }
+}

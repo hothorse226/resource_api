@@ -1,0 +1,60 @@
+{
+  "title": "Validate request error",
+  "description": "returns error of validate",
+  "type": "object",
+  "additionalProperties": false,
+  "required" : ["status"],
+  "properties": {
+    "status": {
+      "description": "Status of error",
+      "type": "integer"
+    },
+    "message": {
+      "description": "Message error",
+      "type": "string"
+    },
+    "errors": {
+      "description": "List error validate of this request",
+      "type": "array",
+      "items":{
+        "type":"object",
+        "properties":{
+          "keyword": {
+            "description": "Keyword of error validate",
+            "type": "string"
+          },
+          "dataPath":{
+            "description": "dataPath of error validate",
+            "type": "string"
+          },
+          "schemaPath":{
+            "description": "Schema of error validate",
+            "type": "string"
+          },
+          "params": {
+            "type":"object",
+            "additionalProperties": true,
+            "properties":{
+              "additionalProperty":{
+                "description": "Error type of error validate",
+                "type": "string"
+              },
+              "missingProperty":{
+                "description": "Error type of error validate",
+                "type": "string"
+              }
+            }
+          },
+          "message":{
+            "description": "message of error validate",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "message_code":{
+      "description": "Message code error",
+      "type":"string"
+    }
+  }
+}

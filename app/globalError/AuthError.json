@@ -1,0 +1,17 @@
+{
+  "title": "Auth error",
+  "description": "returns auth error",
+  "type": "object",
+  "additionalProperties": false,
+  "required" : ["status"],
+  "properties": {
+    "status": {
+      "description": "Status of error",
+      "type": "integer"
+    },
+    "message": {
+      "description": "Message error",
+      "type": "string"
+    }
+  }
+}

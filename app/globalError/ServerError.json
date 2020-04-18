@@ -1,0 +1,21 @@
+{
+  "title": "Server error",
+  "description": "returns server error",
+  "type": "object",
+  "additionalProperties": false,
+  "required" : ["status"],
+  "properties": {
+    "status": {
+      "description": "Status of error",
+      "type": "integer"
+    },
+    "message": {
+      "description": "Message error",
+      "type": "string"
+    },
+    "message_code":{
+      "description": "Message code error",
+      "type":"string"
+    }
+  }
+}
